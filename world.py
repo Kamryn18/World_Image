@@ -4,7 +4,7 @@ app = Flask("MyApp")
 
 @app.route("/")
 def homepage():
-    svg = open('monica.svg').read
+    svg = open('world.svg').read
     return render_template("world.html", svg=svg)
 
 app.run(debug=True)
